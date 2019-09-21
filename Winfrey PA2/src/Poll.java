@@ -77,9 +77,7 @@ public class Poll {
 			 System.out.print(" |     "+ topicAvg +"\n");
 			 topicAvg = 0;
 		 }
-		 
-		 //System.out.println(bestTopicNum +" "+ worstTopicNum);
-    
+		    
 		 System.out.print("\nThe highest rated topic was "+ topics[bestTopicNum] + "\nThe average of this topic was " + bestTopic);
 		 
 		 System.out.print("\n\nThe lowest rated topic was "+ topics[worstTopicNum] + "\nThe average of this topic was " + worstTopic);
