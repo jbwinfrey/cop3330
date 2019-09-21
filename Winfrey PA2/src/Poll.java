@@ -9,7 +9,6 @@ public class Poll {
 		
 		Random randGen = new Random();
 		
-		//String done = "NotDone";
 		int numUsers = 10;
 		int rating = 0;
 		int curUser;
