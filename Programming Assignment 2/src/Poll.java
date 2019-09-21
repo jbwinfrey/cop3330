@@ -1,8 +1,11 @@
+import java.util.Scanner;
+
 
 public class Poll {
 	
 	public static void main(String[] args) {
-	      Scanner scnr = new Scanner(System.in);
+	     
+		Scanner scnr = new Scanner(System.in);
 	      final int NUM_ELEMENTS = 8;             // Number of elements
 	      int[] userVals = new int[NUM_ELEMENTS]; // Array of user numbers
 	      int i;                                  // Loop index
