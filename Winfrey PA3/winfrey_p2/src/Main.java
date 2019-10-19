@@ -27,7 +27,7 @@ public class Main {
 
             SavingsAccount.modifyInterestRate(rate2);
 
-                    System.out.println("Next Month at 5%: \t");
+                    System.out.println("Next Month at 5%:");
                 System.out.print("Saver1: ");
                 saver1.calculateMonthlyInterest();
                 saver1.printBalance();
