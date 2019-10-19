@@ -114,6 +114,8 @@ public class Main {
                  System.out.println("Choose Operation Type: ");
              opIn = scn.nextInt()-1;
 
+
+     while (!done){
         for (int i = 0; i < 10; ++i) {
 
             ran1 = rand.nextInt(Diff(diffIn));
@@ -143,6 +145,12 @@ public class Main {
         }
         else {
             System.out.println("Please ask your teacher for extra help.");
+        }
+
+         System.out.println("Would you like to start a new session? (y/n)");
+            char cont = scn.next().charAt(0);
+            if(cont == 'n') done = true;
+
         }
     }
 }
