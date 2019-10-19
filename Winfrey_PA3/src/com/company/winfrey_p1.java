@@ -1,43 +1,36 @@
+package com.company;
 import java.security.SecureRandom;
 import java.util.Scanner;
 
-public class Main {
+public class winfrey_p1 {
 
-    public static int Operation(int op, int num1, int num2){
+    public static int Multi(int num1, int num2){
 
-        SecureRandom rand = new SecureRandom();
-        int out = 0;
+        System.out.println("How much is " + num1 + " times "+ num2 + "?");
+        return num1 * num2;
 
-        if(op>3){
-            op = rand.nextInt(3);
-        }
-
-        switch (op) {
+       /* int n;
+        switch (num1) {
             case 0:
-               System.out.println("How much is " + num1 + " plus "+ num2 + "?");
-                    out = num1 + num2;
+                n = 10;
                 break;
 
             case 1:
-               System.out.println("How much is " + num1 + " times "+ num2 + "?");
-                    out = num1 * num2;
+                n = 100;
                 break;
 
             case 2:
-                System.out.println("How much is " + num1 + " minus "+ num2 + "?");
-                    out = num1 - num2;
+                n = 1000;
                 break;
 
             case 3:
-                System.out.println("How much is " + num1 + " divided by "+ num2 + "?");
-                    out = num1 / num2;
+                n = 1000;
                 break;
 
-             default:
-               op = 0;
+            default:
+                n = 10;
                 break;
-        }
-        return out;
+        }*/
     }
 
     public static int Diff(int num1) {
@@ -103,23 +96,21 @@ public class Main {
         Scanner scn = new Scanner(System.in);
         SecureRandom rand = new SecureRandom();
 
-        double userNum, answer, numRight = 0, numWrong = 0, grade;
-        int ran1, ran2, diffIn, opIn ;
+        double numRight = 0, grade =0;
+        int userNum, ran1, ran2, answer, diffIn ;
         boolean done = false;
 
         System.out.println("Choose Difficulty: ");
-            diffIn = scn.nextInt()-1;
-                Diff(diffIn);
-
-        System.out.println("Choose Operation Type: ");
-             opIn = scn.nextInt()-1;
+        diffIn = scn.nextInt()-1;
+        Diff(diffIn);
+        System.out.println(diffIn +" "+ Diff(diffIn));
 
         for (int i = 0; i < 10; ++i) {
 
             ran1 = rand.nextInt(Diff(diffIn));
             ran2 = rand.nextInt(Diff(diffIn));
 
-            answer = Operation(opIn, ran1, ran2);
+            answer = Multi(ran1,ran2);
 
             userNum = scn.nextInt();
 
@@ -129,14 +120,11 @@ public class Main {
             }
             else {
                 IncorrectResponse();
-                numWrong += 1;
             }
         } /*Compare answer for 10 q's*/
 
 
         grade = numRight / 10;
-        System.out.println("Number Correct:" + numRight);
-        System.out.println("Number Incorrect:" +numWrong);
 
         if (grade>0.75) {
             System.out.println("Congratulations, you are ready to go to the next level!");
