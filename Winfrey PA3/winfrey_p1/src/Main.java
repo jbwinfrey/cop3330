@@ -107,12 +107,12 @@ public class Main {
         int ran1, ran2, diffIn, opIn ;
         boolean done = false;
 
-        System.out.println("Choose Difficulty: ");
-        diffIn = scn.nextInt()-1;
-        Diff(diffIn);
+                 System.out.println("Choose Difficulty: ");
+            diffIn = scn.nextInt()-1;
+            Diff(diffIn);
 
-        System.out.println("Choose Operation Type: ");
-        opIn = scn.nextInt()-1;
+                 System.out.println("Choose Operation Type: ");
+             opIn = scn.nextInt()-1;
 
         for (int i = 0; i < 10; ++i) {
 
@@ -134,9 +134,9 @@ public class Main {
         } /*Compare answer for 10 q's*/
 
 
-        grade = numRight / 10;
-        System.out.println("Number Correct:" + numRight);
-        System.out.println("Number Incorrect:" +numWrong);
+            grade = numRight / 10;
+                System.out.println("Number Correct:" + numRight);
+                 System.out.println("Number Incorrect:" +numWrong);
 
         if (grade>0.75) {
             System.out.println("Congratulations, you are ready to go to the next level!");
