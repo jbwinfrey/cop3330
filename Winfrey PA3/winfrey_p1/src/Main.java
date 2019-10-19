@@ -107,11 +107,11 @@ public class Main {
         int ran1, ran2, diffIn, opIn ;
         boolean done = false;
 
-                 System.out.println("Choose Difficulty: ");
+                 System.out.println("Choose Difficulty: (1: One Digit, 2: Two Digit, 3: Three Digit, 4: Four Digit)");
             diffIn = scn.nextInt()-1;
             Diff(diffIn);
 
-                 System.out.println("Choose Operation Type: ");
+                 System.out.println("Choose Operation Type: (1: Addition, 2: Multiplication, 3: Subtraction, 4: Division, 5: Random)");
              opIn = scn.nextInt()-1;
 
 
