@@ -35,6 +35,5 @@ public class Main {
                 System.out.print("Saver2: ");
                 saver2.calculateMonthlyInterest();
                 saver2.printBalance();
-
         }
     }

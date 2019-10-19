@@ -15,8 +15,8 @@ public class SavingsAccount {
         this.savingsBalance += monthlyInterest;
     }
 
-    public static void modifyInterestRate(double newRate){
-        annualInterestRate = newRate;
+    public static void modifyInterestRate(double rate){
+        annualInterestRate = rate;
     }
 
     public void printBalance(){
