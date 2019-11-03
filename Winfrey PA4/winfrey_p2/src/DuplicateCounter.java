@@ -4,8 +4,6 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.io.FileWriter;
-import java.io.IOException;
 
 public class DuplicateCounter
 {
@@ -16,8 +14,7 @@ public class DuplicateCounter
     }
 
     public void count(String filename){
-
-
+        //System.out.println("Trying to read input file " + filename);
         Scanner s = null;
         try {
             s = new Scanner(new File(filename));

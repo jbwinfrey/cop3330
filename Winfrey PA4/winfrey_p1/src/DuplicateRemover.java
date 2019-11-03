@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class DuplicateRemover {
     private Set<String> uniqueWords;
-    //This method will take the file name as input and remove the duplicate words using the Set
+
 
     public void remove(String dataFile) throws FileNotFoundException
     {
