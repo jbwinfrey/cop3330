@@ -14,7 +14,7 @@ public class DuplicateCounter
     }
 
     public void count(String filename){
-        //System.out.println("Trying to read input file " + filename);
+
         Scanner s = null;
         try {
             s = new Scanner(new File(filename));
